@@ -12,7 +12,7 @@
 }
 .card {
   border: 2px solid rgb(218, 218, 218);
-  border-radius: 6px;
+  border-radius: 7px;
   padding: 20px;
   transition: all 200ms ease;
 }
@@ -24,7 +24,11 @@
   padding-top: 20px;
 }
 hr {
-  color: rgb(211, 209, 209);
+  border-color: rgb(211, 209, 209);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 30px 0;
 }
 
 .pointer {
@@ -34,7 +38,7 @@ hr {
 /* -- FONTS ------------------------------------------------- */
 body {
   position: relative;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(122, 127, 133);
   font-size: 20px;
   vertical-align: middle;
@@ -43,16 +47,16 @@ body {
 }
 h1 {
   font-size: 25px;
-  padding-bottom: 15px;
+  margin-bottom: 20px;
+  color: #555;
 }
-h1,
 .name {
-  color: black;
+  color: #333;
   margin: 0;
 }
 h2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
 }
 p {
   font-size: 17px;
@@ -90,7 +94,7 @@ p {
   text-align: center;
   background: #fff;
   border: 1px solid rgb(215, 215, 215);
-  border-radius: 5px;
+  border-radius: 7px;
   padding: 30px 20px;
   box-shadow: 0 0 1rem rgb(0 0 0 / 0.2);
 }
@@ -108,6 +112,7 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  line-height: 1.9;
 }
 
 .overlay {
