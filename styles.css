@@ -1,0 +1,98 @@
+/* how to fix the way sometimes the email text drops below the picture? */
+/* -- MAIN STYLES ------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 25px;
+}
+.card {
+  border: 2px solid rgb(218, 218, 218);
+  border-radius: 6px;
+  padding: 20px;
+}
+/* Why isn't my text being vertically aligned? */
+.text-container {
+  padding-top: 20px;
+}
+/* -- FONTS ------------------------------------------------- */
+body {
+  position: relative;
+  font-family: "Urbanist", sans-serif;
+  color: rgb(122, 127, 133);
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 1.5;
+  margin: 50px;
+}
+h1 {
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+h1,
+.name {
+  color: black;
+  margin: 0;
+}
+h2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+p {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+}
+/* -- IMAGE STYLES ------------------------------------------------- */
+.avatar {
+  border-radius: 50%;
+  width: 125px;
+  float: left;
+  margin-right: 20px;
+}
+/* -- MODAL STYLING ------------------------------------------------- */
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(100, 100, 100, 0.4);
+}
+.hidden {
+  display: none;
+}
+
+/* -- TABLET ------------------------------------------------- */
+@media (min-width: 768px) {
+}
+/* -- DESKTOP ------------------------------------------------- */
+@media (min-width: 1024px) {
+}
