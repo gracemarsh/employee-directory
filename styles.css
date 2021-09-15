@@ -14,11 +14,23 @@
   border: 2px solid rgb(218, 218, 218);
   border-radius: 6px;
   padding: 20px;
+  transition: all 200ms ease;
 }
-/* Why isn't my text being vertically aligned? */
+.card:hover,
+.card:focus {
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.2);
+}
 .text-container {
   padding-top: 20px;
 }
+hr {
+  color: rgb(211, 209, 209);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 /* -- FONTS ------------------------------------------------- */
 body {
   position: relative;
@@ -26,7 +38,7 @@ body {
   color: rgb(122, 127, 133);
   font-size: 20px;
   vertical-align: middle;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 50px;
 }
 h1 {
@@ -47,6 +59,18 @@ p {
   font-weight: 400;
   margin: 0;
 }
+
+/* -- EMAIL TEXT OVERFLOW STYLING ------------------------------------------------- */
+.overflow {
+  /**Required properties to achieve text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+}
+
 /* -- IMAGE STYLES ------------------------------------------------- */
 .avatar {
   border-radius: 50%;
@@ -54,6 +78,10 @@ p {
   float: left;
   margin-right: 20px;
 }
+.modal-content > .avatar {
+  margin: 0 auto;
+}
+
 /* -- MODAL STYLING ------------------------------------------------- */
 .modal {
   width: 375px;
@@ -61,9 +89,10 @@ p {
   position: relative;
   text-align: center;
   background: #fff;
-  border: 1px solid #778;
+  border: 1px solid rgb(215, 215, 215);
   border-radius: 5px;
   padding: 30px 20px;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.2);
 }
 
 .modal-close {
@@ -71,10 +100,14 @@ p {
   right: 15px;
   top: 5px;
   cursor: pointer;
+  background-color: white;
+  border: none;
 }
 
 .modal-content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay {
@@ -83,9 +116,9 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-
   background: rgba(100, 100, 100, 0.4);
 }
+
 .hidden {
   display: none;
 }
