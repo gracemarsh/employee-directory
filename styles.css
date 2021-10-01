@@ -15,6 +15,7 @@
   border-radius: 7px;
   padding: 20px;
   transition: all 200ms ease;
+  background-color: white;
 }
 .card:hover,
 .card:focus {
@@ -38,17 +39,35 @@ hr {
 /* -- FONTS ------------------------------------------------- */
 body {
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(122, 127, 133);
   font-size: 20px;
   vertical-align: middle;
   line-height: 1.6;
   margin: 50px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 h1 {
-  font-size: 25px;
+  font-family: "Bungee Shade", cursive;
+  text-align: center;
+  font-size: 50px;
   margin-bottom: 20px;
-  color: #555;
+  color: white;
 }
 .name {
   color: #333;
