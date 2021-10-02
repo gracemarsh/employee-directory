@@ -6,7 +6,10 @@
 
 h1,
 h2,
-p {
+p,
+body,
+header,
+main {
   margin: 0;
   padding: 0;
 }
@@ -20,7 +23,7 @@ p {
 .card {
   border: 2px solid rgb(218, 218, 218);
   border-radius: 7px;
-  padding: 20px;
+  padding: 12px;
   transition: all 200ms ease;
   background-color: white;
 }
@@ -154,12 +157,19 @@ p {
   display: none;
 }
 
+main {
+  padding-bottom: 5rem;
+}
+
 @media (min-width: 450px) {
   .modal {
     width: 375px;
   }
   body {
     margin: 1rem;
+  }
+  .card {
+    padding: 20px;
   }
 }
 
