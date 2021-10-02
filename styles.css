@@ -51,7 +51,7 @@ body {
   font-size: 20px;
   vertical-align: middle;
   line-height: 1.6;
-  margin: 1rem;
+  margin: 5px;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -157,6 +157,9 @@ p {
 @media (min-width: 450px) {
   .modal {
     width: 375px;
+  }
+  body {
+    margin: 1rem;
   }
 }
 
