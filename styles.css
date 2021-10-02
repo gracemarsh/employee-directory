@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-template-rows: auto;
   grid-gap: 25px;
 }
@@ -44,7 +51,7 @@ body {
   font-size: 20px;
   vertical-align: middle;
   line-height: 1.6;
-  margin: 50px;
+  margin: 1rem;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -65,7 +72,7 @@ body {
 h1 {
   font-family: "Bungee Shade", cursive;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: white;
 }
@@ -107,7 +114,7 @@ p {
 
 /* -- MODAL STYLING ------------------------------------------------- */
 .modal {
-  width: 375px;
+  width: 290px;
   margin: 15% auto auto;
   position: relative;
   text-align: center;
@@ -147,8 +154,26 @@ p {
   display: none;
 }
 
+@media (min-width: 450px) {
+  .modal {
+    width: 375px;
+  }
+}
+
 /* -- TABLET ------------------------------------------------- */
 @media (min-width: 768px) {
+  body {
+    margin: 4rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 25px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
 }
 /* -- DESKTOP ------------------------------------------------- */
 @media (min-width: 1024px) {
